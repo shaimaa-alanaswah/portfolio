@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+font-family: 'Poppins', sans-serif;  
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+/* header part */
+header{
+background-color: #f0f0f0;
+width: 100%;
+position: fixed;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px ;
+
+}
+.logo{
+text-decoration: none;
+color:rgb(11, 75, 11) ;
+text-transform: uppercase;
+font-weight: 700;
+font-size:1.8em ;
+}
+.navegation a{
+color:rgb(11, 75, 11) ;
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 500;
+padding-left: 30px;
+}
+.navegation a:hover{
+color: blueviolet;
+}
+
+/* main section */
+section{
+padding: 20px ;
+}
+.main{
+justify-content: space-around;
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+background-image: url(pngtree-pure-white-minimalist-background-wallpaper-image_396581.jpg);
+background-size: cover;
+flex-wrap: wrap;
+}
+
+
+.main h2 {
+display: inline-block;
+margin-top: 10px ;
+font-size: 2.5em;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.main h3{
+font-size: 2em;
+font-weight: 700;
+letter-spacing: 1px;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+.main-butoon{
+background-color: rgb(11, 75, 11);
+color:white;
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 600;
+display: inline-block;
+padding:0.9375em 2.1875em;
+letter-spacing: 1px;
+border-radius: 20px;
+margin-bottom: 40px;
+transition: 0.8s ease;
+border: 4 solid black;
+}
+.main img {
+width: 481px;
+min-width: 460px;
+height: auto;
+display: flex;
+/* flex-wrap: wrap; */
+}
+#main_left_side{
+width: 50%;
+}
+
+.main-butoon:hover{
+color: rgb(11, 75, 11);
+background-color: white;
+transform: scale(1.1);
+}
+.social-icons a{
+color: rgb(11, 75, 11);
+font-size: 1.7em;
+padding-right: 30px;
+}
+
+/* about me part */
+.about-me{
+background-color:rgb(12, 141, 106) ;
+color: white;
+}
+.about-me h3{
+display: flex;
+justify-content: center;
+font-weight: 600;
+font-size: 2em;
+margin-bottom: 30px;
+}
+.about-me p{
+font-size: 1.3em;
+}
+
+/* skills part */
+.skills {
+display: flex;
+justify-content:space-evenly;
+flex-wrap: wrap;
+}
+main h2{
+margin: 20px;
+display: flex;
+justify-content: center;
+font-size: 30px;
+color: rgb(11, 75, 11) ;
+}
+main img{
+width: 100%;
+height:55%;
+}
+
+.card {
+height: 448px;
+background-color: #f8f8f8;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 1.5rem;
+margin: 1rem;
+width: 352px;
+min-width: 235px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+transition: 0.7s ease;
+}
+
+.card h3 {
+color: #333;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 0.5rem;
+color: rgb(11, 75, 11);
+font-size: 14px;
+}
+.card:hover{
+transform:scale(1.1);
+}
+
+/* experience part */
+.experience {
+background-color: #f4f4f4;
+padding:10px;
+border-radius: 10px;
+text-align: center;
+}
+
+.experience h2 {
+color: rgb(11, 75, 11) ;
+font-size: 36px;
+}
+
+.experience-content {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+justify-items: center;
+}
+
+.experience-item {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: left;
+}
+
+.experience-item h3 {
+color: rgb(11, 75, 11) ;
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.company {
+font-weight: bold;
+color: #555;
+}
+
+.date {
+color: #777;
+margin-bottom: 15px;
+}
+
+.experience-item ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+
+.experience-item ul li {
+margin-bottom: 10px;
+color: #333;
+}
+
+/* projects part */
+
+.projects h2{
+margin: 20px;
+display: flex;
+justify-content: center;
+font-size: 30px;
+color: rgb(11, 75, 11) ;
+}
+.projects{
+background-color: #f4f4f4;
+}
+.projects.content{
+margin-top:20px;
+}
+.project-card{
+background-color: white;
+border: 1px soild black ;
+min-width: 237px;
+width: 330px;
+overflow: hidden;
+border-radius: 10px;
+transition: 0.7s ease;
+padding: 1.5rem;
+margin: 1rem;
+}
+.project-card:hover{
+transform: scale(1.1);
+}
+.project-img img {
+width: 100%;
+height: 250px;
+}
+
+.project-info{
+padding: 1em;
+}
+.project-category{
+font-size: 0.8em;
+color:black ;
+}
+.project-title{
+display: flex;
+justify-content: center;
+text-transform: uppercase;
+font-weight:600;
+margin-top: 10px;
+}
+.more-details{
+text-decoration: none;
+color: rgb(11, 75, 11) ;
+}
+.more-details:hover{
+color: black;
+}
+.content {
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+
+/* contact part */
+}
+.title{
+display: flex;
+justify-content: center;
+color: rgb(11, 75, 11) ;
+margin-bottom: 20px;
+
+}
+.cards-contact .content{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.cards-contact .card {
+  height: fit-content;
+width: 268px;
+box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+border-radius: 10px;
+padding: 25px;
+margin: 15px;
+}
+.icon{
+font-size: 4.5em;
+color: rgb(11, 75, 11) ;
+text-align: center;
+}
+
+.info h3 {
+color: #000;
+text-align: center;
+
+}
+
+.contact .info p {
+font-size: 1.5em;
+}
+
+/* footer part */
+
+.footer {
+background-color: rgb(11, 75, 11);
+color: #fff;
+padding:3em;
+
+}
+@media screen and (max-width: 1002px) {
+#main_left_side {
+width: 100%;
+}
+.main{
+padding: 106px;
+}
+.card{
+width: 412px;
+}
+.project-card {
+
+width: 387px;}
+.cards-contact .card {
+  width: 390px;
+}
+}
